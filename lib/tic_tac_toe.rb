@@ -9,9 +9,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-   index = user_input.to_i - 1
-end
 
 def input_to_index(user_input)
    index = user_input.to_i - 1
@@ -110,7 +107,7 @@ def winner(board)
 end
 
 def play(board)
-  
+
 
   while !over?(board)  #until the game is over--> take turns
      turn(board)
